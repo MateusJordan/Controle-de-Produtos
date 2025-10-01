@@ -22,4 +22,20 @@ public class Estoque
         return true;
     }
 
+    public boolean atualizarquantidade (String codigo, int novaquantidade)
+    {
+        produto p = produtos.get (codigo);
+
+        if (p == null)
+        {
+            return false;
+        }
+
+        p.setquantidade (novaquantidade)
+        return true;
+    }
+
+    
+
+
 }
